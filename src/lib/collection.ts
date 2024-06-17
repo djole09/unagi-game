@@ -1,3 +1,5 @@
+import { PlayerType } from "../types";
+
 export const fetchCollection = () => {
   /**
    * Step 2: Instead of directly returning the collection, fetch it from http://localhost:8001/cards
@@ -12,5 +14,5 @@ export const fetchCollection = () => {
         image: 'https://images.fotmob.com/image_resources/playerimages/26166.png'
       }
     }
-  ];
+  ] as PlayerType[];
 };
