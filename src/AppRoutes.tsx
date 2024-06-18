@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { PAGES } from './constants';
-import { Collection } from './pages/Collection';
+import { Collection } from './pages/Collection/Collection';
 import { CreateCard } from './pages/CreateCard';
 
 export interface RouteType {

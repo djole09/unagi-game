@@ -7,4 +7,13 @@ export const LayoutContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
+`;
+
+export const LayoutContent = styled.div`
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 `;

@@ -26,6 +26,6 @@ export const StyledLink = styled(Link)<{ active: string }>`
     active &&
     css`
       text-decoration: underline;
-      color: blue;
+      color: ${({ theme }) => theme.colors.primary};
     `}
 `;
