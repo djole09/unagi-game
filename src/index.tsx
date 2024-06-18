@@ -5,16 +5,19 @@ import { ThemeProvider } from 'styled-components';
 
 import { routes, RouteType } from './AppRoutes';
 import { GlobalStyle, theme } from './Theme';
+import { Layout } from './components/Layout/Layout';
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <Router>
       <GlobalStyle />
-      <Switch>
-        {routes.map((route: RouteType, index: number) => (
-          <Route {...route} key={index} />
-        ))}
-      </Switch>
+      <Layout>
+        <Switch>
+          {routes.map((route: RouteType, index: number) => (
+            <Route {...route} key={index} />
+          ))}
+        </Switch>
+      </Layout>
     </Router>
   </ThemeProvider>
 );
