@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { PAGES } from './constants';
 import { Collection } from './pages/Collection/Collection';
-import { CreateCard } from './pages/CreateCard';
+import { CreateCard } from './pages/CreateCard/CreateCard';
 
 export interface RouteType {
   path: string;
