@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { device } from "../../Theme";
+import { device } from '../../Theme';
 
 export const CollectionContainer = styled.div`
   width: 75%;
   display: grid;
-  justify-content: center;
-  gap: ${({ theme }) => theme.spacing[2]};  
+  place-items: center;
+  gap: ${({ theme }) => theme.spacing[2]};
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(4, auto);
   grid-auto-rows: auto;
@@ -18,7 +18,7 @@ export const CollectionContainer = styled.div`
   }
 `;
 
-export const NoData = styled.div`  
+export const NoData = styled.div`
   height: fit-content;
   width: 100%;
   display: flex;
@@ -31,4 +31,4 @@ export const NoData = styled.div`
     color: ${({ theme }) => theme.colors.crimson};
     background-color: initial;
   }
-`
+`;

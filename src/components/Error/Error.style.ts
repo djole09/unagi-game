@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ErrorContainer = styled.div`
   height: fit-content;
@@ -7,7 +7,8 @@ export const ErrorContainer = styled.div`
   padding: ${({ theme }) => theme.spacing[8]};
   background-color: ${({ theme }) => theme.colors.errorBg};
 
-  h1, h2 {
+  h1,
+  h2 {
     color: ${({ theme }) => theme.colors.crimson};
     background-color: initial;
   }

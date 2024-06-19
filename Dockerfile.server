@@ -1,0 +1,11 @@
+FROM node:16
+
+WORKDIR /app/server
+
+COPY package*.json ./
+RUN npm install
+
+COPY db.json .
+
+EXPOSE 8001
+CMD ["npm", "run", "start:back"]

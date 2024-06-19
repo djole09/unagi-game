@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  server:
+    build:
+      dockerfile: Dockerfile.server
+    ports:
+      - "8001:8001"
+    volumes:
+      - .:/server-1
+    stdin_open: true
+    tty: true
+  client:
+    build:
+      dockerfile: Dockerfile.client
+    ports:
+      - "8000:8000"
+    depends_on:
+      - server
+    volumes:
+      - .:/client-1
+    stdin_open: true
+    tty: true
+networks:
+  app-network:
+    driver: bridge

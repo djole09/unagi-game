@@ -1,11 +1,12 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
+
 import { PAGES } from './constants';
 import { Collection } from './pages/Collection/Collection';
 import { CreateCard } from './pages/CreateCard/CreateCard';
 
 export interface RouteType {
   path: string;
-  component: any;
+  component: React.ComponentType<{}> | (() => JSX.Element);
 }
 
 export const routes: RouteType[] = [

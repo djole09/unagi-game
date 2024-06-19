@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledCard = styled.div`
   height: fit-content;
   width: fit-content;
+  max-height: 300px;
+  max-width: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,5 +26,11 @@ export const StyledCard = styled.div`
     box-shadow: 0 3px 6px ${({ theme }) => theme.colors.hoverShadow1},
       0 15px 25px ${({ theme }) => theme.colors.hoverShadow2},
       0 0 0 1px ${({ theme }) => theme.colors.borderHoverColor};
+  }
+
+  img {
+    max-height: 85%;
+    max-width: 100%;
+    object-fit: cover;
   }
 `;
